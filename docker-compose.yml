@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  ruby-app:
+    build: .
+    container_name: revibot
+    volumes:
+      - ./src:/app
+    tty: true
