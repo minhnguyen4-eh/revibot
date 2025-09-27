@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  ruby-app:
+    build: .
+    container_name: revibot
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/rails
+      - ./log:/rails/log
+    environment:
+      - RAILS_ENV=development
+    tty: true
