@@ -11,8 +11,10 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem "rack-cors"
 # Slack Integration
-gem "slack-ruby-bot-server", "1.2.1"
-gem "slack-ruby-bot-server-events", "0.3.2"
+gem "slack-ruby-bot-server"
+gem "slack-ruby-bot-server-events"
+gem "pagy"
+gem "pagy_cursor"
 
 group :development, :test do
   gem "dotenv-rails"
