@@ -1,7 +1,7 @@
 services:
   ruby-app:
     build: .
-    container_name: revibot
+    container_name: evidence_bot
     ports:
       - "3000:3000"
     volumes:

@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.2.8"
 
 gem "rails", "~> 7.1.5", ">= 7.1.5.2"
-gem "sqlite3", ">= 1.4"
+gem "pg", "~> 1.5"
 gem "puma", ">= 5.0"
 gem "jbuilder", "~> 2.10.1"
 gem "pry-byebug"
@@ -13,6 +13,7 @@ gem "rack-cors"
 # Slack Integration
 gem "slack-ruby-bot-server"
 gem "slack-ruby-bot-server-events"
+gem "otr-activerecord"
 gem "pagy"
 gem "pagy_cursor"
 

@@ -1,5 +1,17 @@
-<div>
-  <a href="<%= SlackRubyBotServer::Config.oauth_authorize_url %>?scope=<%= SlackRubyBotServer::Config.oauth_scope_s %>&client_id=<%= ENV['SLACK_CLIENT_ID'] %>">
-    <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png">
-  </a>
+<div style="max-width: 600px; margin: 50px auto; padding: 20px; font-family: Arial, sans-serif;">
+  <h1 style="color: #333;">📋 EvidenceBot</h1>
+  <p style="color: #666; font-size: 16px; line-height: 1.6;">
+    A Slack bot for collecting and managing evidence in your workspace. 
+    Capture important conversations, track incidents, and organize proof with simple Slack commands.
+  </p>
+  
+  <div style="margin: 30px 0;">
+    <a href="<%= SlackRubyBotServer::Config.oauth_authorize_url %>?scope=<%= SlackRubyBotServer::Config.oauth_scope_s %>&client_id=<%= ENV['SLACK_CLIENT_ID'] %>">
+      <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png">
+    </a>
+  </div>
+  
+  <p style="color: #999; font-size: 14px;">
+    Click the button above to add EvidenceBot to your Slack workspace.
+  </p>
 </div>
