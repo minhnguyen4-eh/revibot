@@ -7,5 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # REST routes from `slack-ruby-bot-server` gem
   mount SlackBotApi => "/"
+
+  root "welcome#index"
 end
